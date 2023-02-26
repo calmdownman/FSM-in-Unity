@@ -57,7 +57,7 @@ namespace StudentOwnedStates
 			entity.Fatigue ++;
 
 			// 지식이 3~10 사이가 되면 
-			if ( entity.Knowledge >= 3 && entity.Knowledge <= 10 )
+			if ( 3 <= entity.Knowledge && entity.Knowledge <= 10 )
 			{
 				int isExit = Random.Range(0, 2);
 				if ( isExit == 1 || entity.Knowledge == 10 )
